@@ -30,5 +30,30 @@ class FizzBuzz {
 
             }
         }
+    int maxint = 0;
+    System.out.println("Start of while loop");
+    while (maxint < 100){
+        maxint = doFizzBuzz(maxint);
+    }
+    }
+
+    private static int doFizzBuzz(int maxint) {
+        boolean divisibleBy3 = maxint % 3 == 0;
+        boolean divisibleBy5 = maxint % 5 == 0;
+
+        if (divisibleBy3 && divisibleBy5){
+            System.out.println("Fizz Buzz");
+        }
+        else if (divisibleBy3){
+            System.out.println("Fizz");
+        }
+        else if (divisibleBy5){
+            System.out.println("Buzz");
+        }
+        else{
+            System.out.println(maxint);
+        }
+        maxint++;
+        return maxint;
     }
 }
