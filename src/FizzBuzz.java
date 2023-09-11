@@ -30,7 +30,7 @@ class FizzBuzz {
 
             }
         }
-    int maxint = 0;
+    int maxint = -10;
     System.out.println("Start of while loop");
     while (maxint < 100){
         maxint = doFizzBuzz(maxint);
