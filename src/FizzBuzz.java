@@ -37,7 +37,7 @@ class FizzBuzz {
     }
     }
 
-    private static int doFizzBuzz(int maxint) {
+    public static int doFizzBuzz(int maxint) {
         boolean divisibleBy3 = maxint % 3 == 0;
         boolean divisibleBy5 = maxint % 5 == 0;
 
